@@ -157,16 +157,32 @@
   <!-- #app end-->
 </body>
 <script>
-  var mySwiper = new Swiper('.swiper-container', {
-    autoplay: {
-      delay: 2000,
-      stopOnLastSlide: false,
-      disableOnInteraction: true,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-    }
-  })
+  (function () {
+    // 菜单显藏
+    $("#icon-menu").click(function () {
+      alert(111)
+      $(".pop_nav_list").fadeIn()
+      $("#icon-menu").hide()
+      $("#icon-close").show()
+    })
+    $("#icon-close").click(function () {
+      $(".pop_nav_list").fadeOut()
+      $("#icon-menu").show()
+      $("#icon-close").hide()
+    })
+
+    var mySwiper = new Swiper('.swiper-container', {
+      autoplay: {
+        delay: 2000,
+        stopOnLastSlide: false,
+        disableOnInteraction: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      }
+    })
+
+  })()
 
 </script>
 
