@@ -1,5 +1,5 @@
 ```
-git clone https://github.com/apollohero/nebular.git
+git clone https://github.com/LTAND/Responsive_layout.git
 
 // 修改index.scss样式, 编译输出indx.css文件
 cd nebular

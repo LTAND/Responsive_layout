@@ -36,16 +36,16 @@
         </ul>
       </nav>
       <div class="menu_wrap fr">
-        <i class="iconfont icon-menu"></i>
-        <i class="iconfont icon-close"></i>
+        <i class="iconfont icon-menu" id="icon-menu"></i>
+        <i class="iconfont icon-close" id="icon-close"></i>
       </div>
       <div class="pop_nav_list">
         <ul class="list">
-          <li><a href="#">云计算</a></li>
-          <li><a href="#">家庭挖矿</a></li>
-          <li><a href="#">技术学院</a></li>
-          <li><a href="#">公司概况</a></li>
-          <li><a href="#">联系我们</a></li>
+          <li class="item"><a href="#">云计算</a></li>
+          <li class="item"><a href="#">家庭挖矿</a></li>
+          <li class="item"><a href="#">技术学院</a></li>
+          <li class="item"><a href="#">公司概况</a></li>
+          <li class="item"><a href="#">联系我们</a></li>
         </ul>
       </div>
 
@@ -63,6 +63,10 @@
             <div class="swiper-slide">slider3</div>
           </div>
           <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
+          <div class="swiper-button-next"></div>
+          <!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
         </div>
       </div>
 
@@ -160,7 +164,6 @@
   (function () {
     // 菜单显藏
     $("#icon-menu").click(function () {
-      alert(111)
       $(".pop_nav_list").fadeIn()
       $("#icon-menu").hide()
       $("#icon-close").show()
@@ -179,7 +182,11 @@
       },
       pagination: {
         el: '.swiper-pagination',
-      }
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     })
 
   })()
