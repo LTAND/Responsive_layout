@@ -1,196 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/index.css">
-  <link rel="stylesheet" href="https://at.alicdn.com/t/font_1596403_2eky80gw1r4.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-  <!--[if lt IE 9]>
-    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
+	<meta charset="UTF-8">
+	<title></title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta name="viewport" content="user-scalable=no,width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://at.alicdn.com/t/font_1596403_9y7ndu5aq5v.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/global.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+	<script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
 </head>
 
-<body>
-  <!-- #app -->
-  <div id="app" class="w1200">
-    <!-- header -->
-    <header class="header clearfix">
-      <div class="logo fl">NeBula</div>
-      <nav class="head_nav">
-        <ul class="list fr">
-          <li class="item"><a href="#">云计算</a></li>
-          <li class="item"><a href="#">家庭挖矿</a></li>
-          <li class="item"><a href="#">技术学院</a></li>
-          <li class="item"><a href="#">公司概况</a></li>
-          <li class="item"><a href="#">联系我们</a></li>
-        </ul>
-      </nav>
-      <div class="menu_wrap fr">
-        <i class="iconfont icon-menu" id="icon-menu"></i>
-        <i class="iconfont icon-close" id="icon-close"></i>
-      </div>
-      <div class="pop_nav_list">
-        <ul class="list">
-          <li class="item"><a href="#">云计算</a></li>
-          <li class="item"><a href="#">家庭挖矿</a></li>
-          <li class="item"><a href="#">技术学院</a></li>
-          <li class="item"><a href="#">公司概况</a></li>
-          <li class="item"><a href="#">联系我们</a></li>
-        </ul>
-      </div>
+<body class="bg01">
+	<div class="mobile_header hidden-md hidden-lg">
+		<a href="#" class="logo">
+			<!-- <img src="upload/logo.png" /> -->
+			<div style="width: 100%;height: 100%px;background-color: #cccccc;"></div>
+		</a>
+		<span class="menu_icon iconfont icon-menu"></span>
+		<span class="menu_icon iconfont icon-close" style="display: none;"></span>
+		<ul class="menu">
+			<li><a href="#">云计算</a></li>
+			<li><a href="#">家庭挖矿</a></li>
+			<li><a href="#">技术学院</a></li>
+			<li><a href="#">公司概况</a></li>
+			<li><a href="#">联系我们</a></li>
+		</ul>
+	</div>
+	<div class="header hidden-xs hidden-sm clearfix">
+		<div class="container-fluid">
+			<a href="#" class="logo">
+				<div style="width: 302px;height: 52px; text-align: center; line-height: 60px; color: white;">logo图</div>
+				<!-- <img src="upload/logo.png" /> -->
+			</a>
+			<div class="nav">
+				<ul>
+					<li><a href="#">云计算</a></li>
+					<li><a href="#">家庭挖矿</a></li>
+					<li><a href="#">技术学院</a></li>
+					<li><a href="#">公司概况</a></li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
-    </header>
-    <!-- header end-->
+	<div id="slideBox" class="slideBox">
+		<!-- 轮播图 -->
+		<div class="bd">
+			<div class="swiper-container">
+				<div class="swiper-button-prev hidden-xs hidden-sm"></div>
+				<!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
+				<div class="swiper-button-next hidden-xs hidden-sm"></div>
+				<!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
+				<div class="swiper-wrapper">
+					<div class="swiper-slide pic"><a class="pic" href="#"><img src="upload/banner1.png"/></a></div>
+					<div class="swiper-slide pic"><a class="pic" href="#"><img src="upload/banner2.png"/></a></div>
+					<div class="swiper-slide pic"><a class="pic" href="#"><img src="upload/banner3.png"/></a></div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</div>
 
-    <!-- section -->
-    <section class="section">
-      <!-- 轮播图 -->
-      <div class="banner">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">slider1</div>
-            <div class="swiper-slide">slider2</div>
-            <div class="swiper-slide">slider3</div>
-          </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
-          <div class="swiper-button-next"></div>
-          <!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
-        </div>
-      </div>
+	<div class="index_section sec01" style="background-color: #F7F8FA;padding-bottom: 4rem;">
+		<div class="container">
+			<div class="row index_section_hd text-center animated fadeInUp">
+				服务产品
+			</div>
+			<div class="row animated fadeInUp">
+				<div class="product-item col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="column_figure">
+						<img src="upload/pic01.jpg" />
+					</div>
+					<div class="column_content">
+						<div class="column_title text-center">
+							企业级服务器
+						</div>
+						<div class="column_con">
+							定制化生产，主板采用自主定制研发Filecoin专用主板,CPU采用24核48线程至强处理器，可扩展性强大,7*24H稳定运行;高度写速度高系统稳定性;
+						</div>
+						<div class="column_btn text-center">
+							<a href="#">MORE</a>
+						</div>
+					</div>
+				</div>
+				<div class="product-item col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="column_figure">
+						<img src="upload/pic01.jpg" />
+					</div>
+					<div class="column_content">
+						<div class="column_title text-center">
+							全球化布局
+						</div>
+						<div class="column_con">
+							机房部署在美国纽约，日本东京，新加坡，香港，深圳，广州六个国际核心骨干网所在地。每T单位空间配备10Mbps的上下行对等的固定IP国际网络。
+						</div>
+						<div class="column_btn text-center">
+							<a href="#">MORE</a>
+						</div>
+					</div>
+				</div>
+				<div class="product-item col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="column_figure">
+						<img src="upload/pic01.jpg" />
+					</div>
+					<div class="column_content">
+						<div class="column_title text-center">
+							IDC托管
+						</div>
+						<div class="column_con">
+							机房满足T4级别标准，配备有UPS电源与全方位保障系统。保障服务器7*24小时稳定运行，并配有相应的容灾机制。并配有相应的容灾机制。
+						</div>
+						<div class="column_btn text-center">
+							<a href="#">MORE</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="index_section sec02">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center">
+						<img class="adv_img img-circle" src="upload/pic03.png"/>
+						<p class="adv_tit">美观性</p>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center">
+						<img class="adv_img img-circle" src="upload/pic04.png"/>
+						<p class="adv_tit">耐磨性</p>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center">
+						<img class="adv_img img-circle" src="upload/pic05.png"/>
+						<p class="adv_tit">抗菌性</p>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center">
+						<img class="adv_img img-circle" src="upload/pic06.png"/>
+						<p class="adv_tit">环保性</p>
+					</div>
+				</div>
+			</div>
+		</div> -->
+	<div class="index_section sec03" style="background-color: #fff;">
+		<div class="container">
+			<!-- <div class="row index_section_hd text-center">
+					产品中心
+				</div> -->
+			<!-- <div class="row">					
+					<ul class="product_list">
+						<li class="pro_item col-lg-3 col-md-3 col-sm-3 col-xs-6">
+							<a class="pro_pic" href="#">
+								<img src="upload/pic02.jpg"/>
+							</a>
+							<a href="#" class="pro_tit">热销产品一</a>
+						</li>
+						<li class="pro_item col-lg-3 col-md-3 col-sm-3 col-xs-6">
+							<a class="pro_pic" href="#">
+								<img src="upload/pic02.jpg"/>
+							</a>
+							<a href="#" class="pro_tit">热销产品二</a>
+						</li>
+						<li class="pro_item col-lg-3 col-md-3 col-sm-3 col-xs-6">
+							<a class="pro_pic" href="#">
+								<img src="upload/pic02.jpg"/>
+							</a>
+							<a href="#" class="pro_tit">热销产品三</a>
+						</li>
+						<li class="pro_item col-lg-3 col-md-3 col-sm-3 col-xs-6">
+							<a class="pro_pic" href="#">
+								<img src="upload/pic02.jpg"/>
+							</a>
+							<a href="#" class="pro_tit">热销产品四</a>
+						</li>
+						<li class="pro_item col-lg-3 col-md-3 col-sm-3 col-xs-6">
+							<a class="pro_pic" href="#">
+								<img src="upload/pic02.jpg"/>
+							</a>
+							<a href="#" class="pro_tit">热销产品五</a>
+						</li>
+						<li class="pro_item col-lg-3 col-md-3 col-sm-3 col-xs-6">
+							<a class="pro_pic" href="#">
+								<img src="upload/pic02.jpg"/>
+							</a>
+							<a href="#" class="pro_tit">热销产品六</a>
+						</li>
+						<li class="pro_item col-lg-3 col-md-3 col-sm-3 col-xs-6">
+							<a class="pro_pic" href="#">
+								<img src="upload/pic02.jpg"/>
+							</a>
+							<a href="#" class="pro_tit">热销产品七</a>
+						</li>
+						<li class="pro_item col-lg-3 col-md-3 col-sm-3 col-xs-6">
+							<a class="pro_pic" href="#">
+								<img src="upload/pic02.jpg"/>
+							</a>
+							<a href="#" class="pro_tit">热销产品八</a>
+						</li>
+					</ul>
+				</div> -->
+			<div class="row index_section_hd text-center animated fadeInUp">
+				新闻动态
+			</div>
+			<div class="row">
+				<div class="col-lg-5 col-md-5 hidden-xs hidden-sm">
+					<div id="news_slide" class="news_slide_box animated bounce bounceInLeft">
+						<div class="bd">
+							<ul>
+								<li>
+									<a class="pic" href="#">
+										<img src="upload/pic07.jpg" />
+										<span class="title">
+											新闻标题
+										</span>
+									</a>
+								</li>
+								<li>
+									<a class="pic" href="#">
+										<img src="upload/pic07.jpg" />
+										<span class="title">
+											新闻标题新闻标题新闻标题新闻标题新闻标题
+										</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<span class="prev"></span>
+						<span class="next"></span>
+					</div>
+				</div>
+				<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+					<ul class="news_list animated bounce bounceInRight">
+						<li>
+							<div class="news_pic col-lg-3 col-md-3 col-sm-4 col-xs-12 ">
+								<a href="#" class="">
+									<img src="upload/pic08.jpg" />
+								</a>
+							</div>
+							<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+								<a href="#" class="news_tit">定制化生产，主板采用自主定制</a>
+								<p class="news_time">2019-09-20</p>
+								<p class="news_desc">2019年09月20日，定制化生产，主板采用自主定制研发Filecoin专用主板,CPU采用24核48线程至强处理器，可扩展性强大,7*24H稳定运行;高度写速度高系统稳定性;</p>
+							</div>
+						</li>
+						<li>
+							<div class="news_pic col-lg-3 col-md-3 col-sm-4 col-xs-12">
+								<a href="#" class="">
+									<img src="upload/pic08.jpg"/>
+								</a>
+							</div>
+							<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+								<a href="#" class="news_tit">定制化生产，主板采用自主定制</a>
+								<p class="news_time">2019-09-20</p>
+								<p class="news_desc">2019年09月20日，定制化生产，主板采用自主定制研发Filecoin专用主板,CPU采用24核48线程至强处理器，可扩展性强大,7*24H稳定运行;高度写速度高系统稳定性;</p>
+							</div>
+						</li>
+						<li>
+							<div class="news_pic col-lg-3 col-md-3 col-sm-4 col-xs-12">
+								<a href="#" class="">
+									<img src="upload/pic08.jpg" />
+								</a>
+							</div>
+							<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+								<a href="#" class="news_tit">定制化生产，主板采用自主定制</a>
+								<p class="news_time">2019-09-20</p>
+								<p class="news_desc">2019年09月20日，定制化生产，主板采用自主定制研发Filecoin专用主板,CPU采用24核48线程至强处理器，可扩展性强大,7*24H稳定运行;高度写速度高系统稳定性;</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<ul class="footer_contact col-lg-10 col-md-10 col-sm-10">
+						<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 footer_contact-item"><span>电话：</span><div>400-000-0000</div></li>
+						<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 footer_contact-item"><span>服务时间：</span><div>周一到周五 早9:00到晚6:00</div></li>
+						<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 footer_contact-item"><span>邮箱：</span><div>helleworld@gamil.com</div></li>
+						<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 footer_contact-item"><span>地址：</span><div>深圳市南山区软件产业基地5栋B座304</div></li>
+					</ul>
+					<div class="footer_ewm col-lg-2 col-md-2 col-sm-2">
+						<img src="upload/code222.png"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/TouchSlide.1.1.js"></script>
+	<script>
 
-      <!-- NeBula云租赁 -->
-      <div class="server-project">
-        <div class="first-title projects-title">服务项目</div>
-        <div class="projects-wrapper">
-          <div class="second-title">NeBula云租赁</div>
-          <div class="projects">
-            <ul>
-              <li class="project-item">
-                <div class="third-title">企业级服务器</div>
-                <div class="project-img"><img src="" alt=""></div>
-                <p class="project-desc">定制化生产，主板采用自主定制研发Filecoin专用主板,CPU采用24核48线程至强处理器，可扩展性强大,7*24H稳定运行;高度写速度高系统稳定性;</p>
-              </li>
-              <li class="project-item">
-                <div class="third-title">全球化布局</div>
-                <div class="project-img"><img src="" alt=""></div>
-                <p class="project-desc">机房部署在美国纽约，日本东京，新加坡，香港，深圳，广州六个国际核心骨干网所在地。每T单位空间配备10Mbps的上下行对等的固定IP国际网络。</p>
-              </li>
-              <li class="project-item">
-                <div class="third-title">IDC托管</div>
-                <div class="project-img"><img src="" alt=""></div>
-                <p class="project-desc">机房满足T4级别标准，配备有UPS电源与全方位保障系统。保障服务器7*24小时稳定运行，并配有相应的容灾机制。并配有相应的容灾机制。</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+		TouchSlide({
+			slideCell: "#news_slide",
+			mainCell: ".bd ul",
+			effect: "leftLoop",
+			autoPlay: true//自动播放
+		});		
 
-      <!-- 新闻动态 | 企业公告 -->
-      <div class="infor-wrapper">
-        <div class="infor news">
-          <div class="infor-second-titel">新闻动态</div>
-          <div class="infor-container">
-            <ul>
-              <li class="infor-item">
-                <div class="infor-img-wrapper"><img src="" alt=""></div>
-                <p class="infor-desc">定制化生产，主板采用自主定制研发Filecoin专用主板,CPU采用24核48线程至强处理器，可扩展性强大,7*24H稳定运行;高度写速度高系统稳定性;</p>
-              </li>
-              <li class="infor-item">
-                <div class="infor-img-wrapper"><img src="" alt=""></div>
-                <p class="infor-desc">定制化生产，主板采用自主定制研发Filecoin专用主板,CPU采用24核48线程至强处理器，可扩展性强大,7*24H稳定运行;高度写速度高系统稳定性;</p>
-              </li>
-              <li class="infor-item">
-                <div class="infor-img-wrapper"><img src="" alt=""></div>
-                <p class="infor-desc">定制化生产，主板采用自主定制研发Filecoin专用主板,CPU采用24核48线程至强处理器，可扩展性强大,7*24H稳定运行;高度写速度高系统稳定性;</p>
-              </li>
-            </ul>
-            <div class="more">阅读更多</div>
-          </div>
-        </div>
-        <div class="line"></div>
-        <div class="infor company">
-          <div class="infor-second-titel">企业公告</div>
-          <div class="infor-container">
-            <ul>
-              <li class="infor-item">
-                <div class="infor-img-wrapper"><img src="" alt=""></div>
-                <p class="infor-desc">定制化生产，主板采用自主定制研发Filecoin专用主板,CPU采用24核48线程至强处理器，可扩展性强大,7*24H稳定运行;高度写速度高系统稳定性;</p>
-              </li>
-              <li class="infor-item">
-                <div class="infor-img-wrapper"><img src="" alt=""></div>
-                <p class="infor-desc">定制化生产，主板采用自主定制研发Filecoin专用主板,CPU采用24核48线程至强处理器，可扩展性强大,7*24H稳定运行;高度写速度高系统稳定性;</p>
-              </li>
-              <li class="infor-item">
-                <div class="infor-img-wrapper"><img src="" alt=""></div>
-                <p class="infor-desc">定制化生产，主板采用自主定制研发Filecoin专用主板,CPU采用24核48线程至强处理器，可扩展性强大,7*24H稳定运行;高度写速度高系统稳定性;</p>
-              </li>
-            </ul>
-            <div class="more">阅读更多</div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- section end-->
-
-    <!-- 战略合作 -->
-    <div class="strategy">
-      <div class="first-title strategy-title">战略合作</div>
-      <div class="strategy-container"></div>
-    </div>
-
-    </section>
-    <!-- section end -->
-
-    <!-- footer -->
-    <footer class="footer"></footer>
-    <!-- footer end-->
-
-  </div>
-  <!-- #app end-->
+		var mySwiper = new Swiper('.swiper-container', {
+			autoplay: {
+				delay: 2000,
+				stopOnLastSlide: false,
+				disableOnInteraction: true,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		})
+	</script>
 </body>
-<script>
-  (function () {
-    // 菜单显藏
-    $("#icon-menu").click(function () {
-      $(".pop_nav_list").fadeIn()
-      $("#icon-menu").hide()
-      $("#icon-close").show()
-    })
-    $("#icon-close").click(function () {
-      $(".pop_nav_list").fadeOut()
-      $("#icon-menu").show()
-      $("#icon-close").hide()
-    })
-
-    var mySwiper = new Swiper('.swiper-container', {
-      autoplay: {
-        delay: 2000,
-        stopOnLastSlide: false,
-        disableOnInteraction: true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    })
-
-  })()
-
-</script>
 
 </html>
